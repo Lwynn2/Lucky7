@@ -32,8 +32,7 @@ int luckyOne() {
 }
 
 int luckyTwo() {
-	int i;
-	for(i=1,)
+	
 }
 
 int luckyThree() {
