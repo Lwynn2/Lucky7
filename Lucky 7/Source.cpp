@@ -43,7 +43,13 @@ void luckyTwo() {
 }
 
 void luckyThree() {
-	
+	int i, fact = 1;
+	for (i = 1; i <= 10; i++) {
+		if ((i > 0) && (i <= 10)) {
+			fact = fact * i;
+			cout << "Factorial of " << i << " is: " << fact << endl;
+		}
+	}
 }
 
 void luckyFour() {
