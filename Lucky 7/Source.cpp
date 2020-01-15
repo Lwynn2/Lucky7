@@ -5,7 +5,7 @@
 #include<iostream>
 using namespace std;
 
-int luckyOne() {
+void luckyOne() {
 
 
 	int n, largest, smallest;
@@ -31,27 +31,34 @@ int luckyOne() {
 	cout << "Smallest number is: " << smallest << endl;
 }
 
-int luckyTwo() {
+void luckyTwo() {
+	int i;
+	int sum = 0;
+	for (i = 1; i <= 50; i++) {
+		if ((i % 7 == 0) && (i > 0)) {
+			sum += i;
+		}
+	}	
+	cout << "sum = " << sum << endl;
+}
+
+void luckyThree() {
 	
 }
 
-int luckyThree() {
+void luckyFour() {
 
 }
 
-int luckyFour() {
+void luckyFive() {
 
 }
 
-int luckyFive() {
+void luckySix() {
 
 }
 
-int luckySix() {
-
-}
-
-int luckySeven() {
+void luckySeven() {
 
 }
 
