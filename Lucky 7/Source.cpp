@@ -78,11 +78,27 @@ void luckyFour() {
 }
 
 void luckyFive() {
-
+	int num, i;
+	int p = 0, flag = 0;
+	cout << "Enter a positive number: " << endl;
+	cin >> num;
+	p = num / 2;
+	for (i = 2; i <= p; i++) {
+		if (num % i == 0)
+		{
+			cout << "Number is not Prime." << endl;
+			flag = 1;
+			break;
+		}
+	}
+	if (flag == 0)
+		cout << "Number is Prime." << endl;
 }
 
 void luckySix() {
-
+	int arr[] = { 4,7,1,9,80,-44,5,-1,4,34,87,-23,54,-743,901 };
+	int numItems = sizeof(arr) / sizeof(int);
+	cout << "There are " << numItems << " items in the list" << endl;
 }
 
 void luckySeven() {
