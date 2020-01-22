@@ -98,7 +98,13 @@ void luckyFive() {
 void luckySix() {
 	int arr[] = { 4,7,1,9,80,-44,5,-1,4,34,87,-23,54,-743,901 };
 	int numItems = sizeof(arr) / sizeof(int);
-	cout << "There are " << numItems << " items in the list" << endl;
+	int sum = 0;
+	int i = 0;
+	while (i < numItems) {
+		sum = sum + arr[i];
+		i++;
+	}
+	cout << "average = " << sum / double(numItems) << endl;
 }
 
 void luckySeven() {
