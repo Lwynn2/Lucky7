@@ -3,6 +3,7 @@
 //Lucky 7
 
 #include<iostream>
+#include<fstream>
 using namespace std;
 
 void luckyOne() {
@@ -108,7 +109,26 @@ void luckySix() {
 }
 
 void luckySeven() {
-
+	ifstream fin("input.in");
+	if (!fin) {
+		cerr << "file not found...";
+		exit(2);
+	}
+	int Snum;
+	cout << "Enter the number of strings to read: ";
+	cin >> Snum;
+	string* strArr = new string[Snum];
+	string str;
+	int i = 0;
+	while (i<Snum) {
+		fin >> strArr[i];
+		i++;
+	}
+	string max = strArr[0];
+	for (int i = 1; i < Snum; i++) {
+		if (strArr[i].size() > max.size()) max = strArr[i];
+	}
+	cout << "The largest word is: " << max << endl;
 }
 
 
